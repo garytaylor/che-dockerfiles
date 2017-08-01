@@ -25,6 +25,7 @@ RUN sudo mkdir -p /etc/X11/blackbox && \
 ADD supervisord.conf /opt/
 EXPOSE 6080
 
+USER root
 WORKDIR /usr/local
 RUN wget https://download.jetbrains.com/ruby/RubyMine-2017.2.tar.gz
 RUN tar -xvzf RubyMine-2017.2.tar.gz
